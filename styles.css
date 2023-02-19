@@ -1,0 +1,55 @@
+:root {
+    background-color: var(--oxford-blue);
+    font-family: 'Nanum Myeongjo', serif;
+    --snow: #fbf5f3ff;
+    --fulvous: #e28413ff;
+    --oxford-blue: #000022ff;
+    --rusty-red: #de3c4bff;
+    --cardinal: #c42847ff;
+    padding: 0;
+    margin: 0;
+}
+
+/* font-family: 'Nanum Myeongjo', serif; */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--snow);
+    padding: 15px;
+    transition: ease 0.4s;
+}
+
+.container h1 {
+    color: var(--oxford-blue);
+    font-weight: 900;
+}
+
+span {
+    display: flex;
+    justify-content: space-between;
+}
+
+span button {
+    border-style: none;
+    background-color: var(--cardinal);
+    color: var(--snow);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+
+span button:hover {
+    background-color: var(--fulvous);
+    transition: ease 0.4s;
+}
