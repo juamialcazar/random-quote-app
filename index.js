@@ -3,6 +3,8 @@ async function randomQuote() {
     //Math.floor(Math.random()*40)+1
     const quotesJSON = await quotes.json();
     //create object or array with it?
+    quotesJSON.push({author: 'Danni De Leon', 
+                    text: 'im ganging gang gangster'})
     const random = Math.floor(Math.random()*quotesJSON.length)+1;
     updateQuote(quotesJSON[random]);
 }
